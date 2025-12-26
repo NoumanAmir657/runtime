@@ -20,8 +20,8 @@ ctest
 ```
 
 ## Debug
-You can replace the standard system malloc/free with a Debug Allocator that logs all memory operations to stdout.
-To enable it, configure CMake with the RUNTIME_USE_DEBUG_ALLOCATOR flag:
+You can replace the standard system `malloc`/`free` with a Debug Allocator that logs all memory operations to `stdout`.
+To enable it, configure CMake with the `RUNTIME_USE_DEBUG_ALLOCATOR` flag:
 ```bash
 cmake -DRUNTIME_USE_DEBUG_ALLOCATOR=ON ..
 
