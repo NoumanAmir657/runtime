@@ -1,1 +1,8 @@
-build
+# Ignore the build directory
+build/
+
+# Ignore the compile commands file (often symlinked to root)
+compile_commands.json
+
+# Ignore CMake user cache files if they appear
+CMakeUserPresets.json

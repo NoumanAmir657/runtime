@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(Runtime C)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # For CTest Integration
 enable_testing()
 
