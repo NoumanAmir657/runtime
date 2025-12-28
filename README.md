@@ -6,7 +6,7 @@ Developing this for my own understanding on how runtime are built from scratch. 
 mkdir build
 cd build
 
-cmake ..
+cmake -DCMAKE_C_COMPILER=clang-18 -S .. -B .
 
 cmake --build .
 
@@ -23,7 +23,7 @@ ctest
 You can replace the standard system `malloc`/`free` with a Debug Allocator that logs all memory operations to `stdout`.
 To enable it, configure CMake with the `RUNTIME_USE_DEBUG_ALLOCATOR` flag:
 ```bash
-cmake -DRUNTIME_USE_DEBUG_ALLOCATOR=ON ..
+cmake -DRUNTIME_USE_DEBUG_ALLOCATOR=ON -DCMAKE_C_COMPILER=clang-18 -S .. -B .
 
 cmake --build .
 ```

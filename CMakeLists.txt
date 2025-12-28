@@ -3,6 +3,8 @@ project(Runtime C)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+add_compile_options(-Wall -Wextra -Werror -pedantic-errors)
+
 # For CTest Integration
 enable_testing()
 

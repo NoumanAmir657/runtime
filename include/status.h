@@ -8,10 +8,10 @@ extern "C" {
 typedef int runtime_status_t;
 
 typedef enum runtime_status_code_e {
-    RUNTIME_STATUS_OK = 0,
-    RUNTIME_STATUS_INVALID_ARGUMENT = -1,
-    RUNTIME_STATUS_OUT_OF_MEMORY = -2,
-    RUNTIME_STATUS_UNIMPLEMENTED = -3,
+  RUNTIME_STATUS_OK = 0,
+  RUNTIME_STATUS_INVALID_ARGUMENT = -1,
+  RUNTIME_STATUS_OUT_OF_MEMORY = -2,
+  RUNTIME_STATUS_UNIMPLEMENTED = -3,
 } runtime_status_code_t;
 
 #define RUNTIME_STATUS_IS_OK(x) ((x) == RUNTIME_STATUS_OK)
